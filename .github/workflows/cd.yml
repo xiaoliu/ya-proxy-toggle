@@ -17,6 +17,8 @@ jobs:
         with:
           node-version: "latest"
 
+      # there is an issue with user the lastest version of web-ext to build
+      # https://discourse.mozilla.org/t/webexterror-unsupported-filetype-when-trying-to-sign-a-locally-built-extension/143055
       - name: build tool installation
         run: npm install -g web-ext@8.2.0
 
