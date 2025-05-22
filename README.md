@@ -1,4 +1,5 @@
 # Yet another Proxy Toggle (ya-proxy-toggle)
+![Build Release Status](https://github.com/xiaoliu/ya-proxy-toggle/actions/workflows/cd.yml/badge.svg)
 
 Yet another Proxy Toggle is yet another proxy toggle extension for Firefox.
 
