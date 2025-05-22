@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="options.css" />
+        <title>Options</title>
+    </head>
+    <body>
+        <h1>Proxy Settings</h1>
+        <label>SOCKS Host </label>
+        <input id="sockshost" type="text" placeholder="host address" />
+        <label>Port </label>
+        <input id="socksport" type="text" placeholder="port number" />
+        <label>
+            <input id="proxydns" type="checkbox" />
+            Proxy DNS when using SOCKS
+        </label>
+        <label>
+            <input id="logging" type="checkbox" />
+            verbose logging (for troubleshooting)
+        </label>
+        <button id="save-button">Save Options</button>
+        <script src="options.js"></script>
+    </body>
+</html>

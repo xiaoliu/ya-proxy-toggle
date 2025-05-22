@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "Yet Another Proxy Toggle",
+  "version": "0.5.2",
+  "description": "a quick way to toggle firefox network connection between direct and preset proxy settings",
+  "homepage_url": "https://github.com/xiaoliu/ya-proxy-toggle",
+  "icons": {
+    "96": "icons/direct.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{36bf4fb7-8b38-4805-b959-cd8fe1c39f57}",
+      "strict_min_version": "91.1.0"
+    }
+  },
+  "permissions": ["proxy", "storage"],
+  "browser_action": {
+    "default_icon": "icons/direct.png",
+    "default_title": "Toggle proxy settings"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "options_ui": {
+    "page": "options/options.html"
+  }
+}

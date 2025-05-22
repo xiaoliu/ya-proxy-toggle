@@ -1,0 +1,6 @@
+# for local test signing, ignoring local folder
+web-ext-artifacts/
+
+.*
+!.gitignore
+!.github/
