@@ -18,7 +18,7 @@ jobs:
           node-version: "latest"
 
       - name: build tool installation
-        run: npm install -g web-ext@8.3.0
+        run: npm install -g web-ext@8.2.0
 
       - name: build and sign
         run: web-ext sign --channel=unlisted --api-key=${{ secrets.AMO_JWT_ISSUER }} --api-secret=${{ secrets.AMO_JWT_SECRET }}
