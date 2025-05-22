@@ -20,7 +20,10 @@ jobs:
       - name: build tool installation
         run: npm install -g web-ext
 
-      - name: build and sign
+      - name: build
+        run: web-ext build
+
+      - name: sign
         run: web-ext sign --channel=unlisted --api-key=${{ secrets.AMO_JWT_ISSUER }} --api-secret=${{ secrets.AMO_JWT_SECRET }}
 
       - name: Upload to release
